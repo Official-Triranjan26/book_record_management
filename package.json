@@ -1,0 +1,23 @@
+{
+  "name": "book_record_management",
+  "version": "1.0.0",
+  "description": "Book record management server using node and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Official-Triranjan26/book_record_management.git)"
+  },
+  "author": "Triranjan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
