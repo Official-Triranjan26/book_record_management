@@ -121,6 +121,33 @@ app.put("/users/:id",(req,res)=>{
 
 })
 
+// Route : /users/:id
+// method :DELETE
+// description :delete a user by id
+// access :public
+// parameter :id
+
+
+app.delete("/users/:id",(req,res)=>{
+    const {id}=req.params;
+    const user=users.find((each)=>each.id===id);
+    if(!user){
+        return res.status(404).json({
+            success:false,
+            // id:id,
+            message:"User to be deleted, not found !!"
+        });
+    }
+    const index=users.indexOf(user);
+    users.splice(index,1);
+    return res.status(202).json({
+        success:true,
+        id:id,
+        message:"User deleted successfully !",
+        data:users
+    });
+});
+
 app.get("*",(req,res)=>{
     res.status(404).json({
         message : "This route does not exit",
