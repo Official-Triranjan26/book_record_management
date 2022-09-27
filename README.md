@@ -22,15 +22,15 @@ GET: Get user subscription details
 Date of subscription
 Valid till
 Fine if any
-## /books
+## /books✅
 GET: Get all books 
 POST: Create/Add a new book
 
-## /books/{id}
+## /books/{id}✅
 GET: Get a book by id
 PUT: Update a book by id
 
-## /books/issued/by-user
+## /books/issued/by-user✅
 GET: Get all issued books
 
 ## /books/issued/withFine
