@@ -23,15 +23,15 @@ Date of subscription
 Valid till
 Fine if any
 ## /books
-GET: Get all books 
-POST: Create/Add a new book
+GET: Get all books ✅
+POST: Create/Add a new book✅
 
 ## /books/{id}
-GET: Get a book by id
-PUT: Update a book by id
+GET: Get a book by id✅
+PUT: Update a book by id✅
 
 ## /books/issued/by-user
-GET: Get all issued books
+GET: Get all issued books✅
 
 ## /books/issued/withFine
 // TODO TASK // 🏁 GET: Get all issued books with fine
