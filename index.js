@@ -1,15 +1,18 @@
 const express = require("express");
+const dotenv = require("dotenv");
+// database connection
+const DbConnection = require("./databaseConnection");
+// importing routes
+const usersRouter = require("./routes/users");
+const booksRouter = require("./routes/books");
+
+dotenv.config();
+
 const app = express();
-// JSON data importing
-const {users}=require('./data/users.json');
+
+DbConnection();
 
 const port = 8081;
-
-const usersRouter=require("./routes/users");
-const booksRouter=require("./routes/books");
-
-// app.use(express.json());
-
 app.get("/",(req,res)=>{
     res.status(200).json({
         message : "Server is up and running ",
